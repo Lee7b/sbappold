@@ -1,16 +1,17 @@
 const express = require('express');
 const path = require('path');
+const bodyParser = require('body-parser');
+const exphbs = require('express-handlebars');
+const nodemailer = require('nodemailer');
 
 const app = express();
 
 // Serve the static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
 
-// An api endpoint that returns a short list of items
-app.get('/api/getList', (req,res) => {
-    var list = ["item1", "item2", "item5"];
-    res.json(list);
-    console.log('Sent list of items');
+// An api endpoint
+app.get('/api/contact', (req,res) => {
+    res.send('Hello');
 });
 
 // Handles any requests that don't match the ones above
