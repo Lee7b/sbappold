@@ -1,20 +1,61 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import Layout from "../components/Layout";
+import { MDBJumbotron, MDBBtn, MDBContainer, MDBRow, MDBCol, MDBCardTitle, MDBIcon } from "mdbreact";
 
-
-class Home extends Component {
-  render() {
+class Home extends React.Component {
+    render () {
     return (
-    <div className="App">
-      <h1>Project Home</h1>
-      {/* Link to List.js */}
-      <Link to={'./list'}>
-        <button variant="raised">
-            My List
-        </button>
-      </Link>
-    </div>
-    );
+        <Layout>
+            <MDBContainer>
+            <MDBRow>
+                <MDBCol>
+                <MDBJumbotron style={{ padding: 0 }}>
+                    <MDBCol className="text-white text-center py-5 px-4 my-5" style={{ backgroundImage: `url(./img/bg1.jpg)` }}>
+                    <MDBCol className="py-5">
+                        <MDBCardTitle className="h1-responsive pt-3 m-5 font-bold">Hello world!</MDBCardTitle>
+                        <p className="mx-5 mb-5">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque mollis suscipit aliquam. Suspendisse posuere 
+                             turpis justo, vel ultrices nulla mollis eu. Cras ac ipsum et 
+                             nunc congue blandit eget vel libero. Donec ac sodales orci.
+                              Aenean commodo lorem vel finibus lobortis. Nulla elit velit, 
+                              venenatis quis congue sit amet, placerat quis augue. Ut rhoncus, 
+                              orci eget sollicitudin mattis, dui mi eleifend risus, vel 
+                        </p>
+                        <MDBBtn outline color="white" className="mb-5"><MDBIcon icon="clone" className="mr-2"></MDBIcon> View project</MDBBtn>
+                    </MDBCol>
+                    </MDBCol>
+                </MDBJumbotron>
+                </MDBCol>
+            </MDBRow>
+            </MDBContainer>
+
+            <MDBContainer>
+            <MDBRow>
+                <MDBCol>
+                <MDBJumbotron style={{ padding: 0 }}>
+                    <MDBCol className="text-white text-center py-5 px-4 my-5" style={{ backgroundImage: `url(./img/bg2.jpg)` }}>
+                    <MDBCol className="py-5">
+                        <MDBCardTitle className="h1-responsive pt-3 m-5 font-bold">There's no place like home</MDBCardTitle>
+                        <p className="mx-5 mb-5">
+                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque mollis suscipit aliquam. Suspendisse posuere 
+                             turpis justo, vel ultrices nulla mollis eu. Cras ac ipsum et 
+                             nunc congue blandit eget vel libero. Donec ac sodales orci.
+                              Aenean commodo lorem vel finibus lobortis. Nulla elit velit, 
+                              venenatis quis congue sit amet, placerat quis augue. Ut rhoncus, 
+                              orci eget sollicitudin mattis, dui mi eleifend risus, vel 
+                        </p>
+                        <MDBBtn outline color="white" className="mb-5"><MDBIcon icon="clone" className="mr-2"></MDBIcon> View project</MDBBtn>
+                    </MDBCol>
+                    </MDBCol>
+                </MDBJumbotron>
+                </MDBCol>
+            </MDBRow>
+            </MDBContainer>
+        </Layout>
+    )
   }
 }
+
 export default Home;
