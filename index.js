@@ -20,6 +20,7 @@ app.use(bodyParser.json());
 // An api endpoint
 app.post('/api/contact', (req,res) => {
     console.log(req.body);
+    res.send(req.body);
 });
 
 // The "catchall" handler: for any request that doesn't
