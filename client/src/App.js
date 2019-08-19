@@ -11,6 +11,7 @@ class App extends React.Component {
             <Route exact path = "/" component={Home} />
             <Route path = "/contact" component={Contact} />
             <Route path = "/about" component={About} />
+            <Route path = "/about" component={List} />
             <Route path='/linkedin' component={() => { 
               window.location = ('https://www.linkedin.com/in/samuel-burkett'); 
               return null;
