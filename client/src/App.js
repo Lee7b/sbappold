@@ -3,6 +3,7 @@ import {BrowserRouter, Route} from "react-router-dom";
 import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
 import About from "./Pages/About";
+import List from "./Pages/List";
 
 class App extends React.Component { 
     render () {
