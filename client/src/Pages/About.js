@@ -13,7 +13,6 @@ class About extends React.Component {
                     <MDBCardBody>
                     <MDBCardTitle>About</MDBCardTitle>
                     <MDBCardText>
-                        <p>
                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                            Nulla mattis nibh mattis velit varius consectetur. Nulla
                            dictum ante et nulla aliquam condimentum. Praesent 
@@ -35,7 +34,6 @@ class About extends React.Component {
                            ultrices dolor vitae placerat. In nisl mauris, tincidunt nec 
                            lobortis nec, hendrerit ut urna. Quisque pulvinar mi sed massa
                            pulvinar posuere. Curabitur rutrum velit neque.
-                        </p>
                     </MDBCardText>
                     </MDBCardBody>
                 </MDBCard>
