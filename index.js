@@ -18,8 +18,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // An api endpoint
-app.get('/api/contact', (req,res) => {
-    res.send('TEST');
+app.post('/api/contact', (req,res) => {
+    res.send(req.body);
 });
 
 // The "catchall" handler: for any request that doesn't
