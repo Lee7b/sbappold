@@ -2,7 +2,7 @@ import React from "react";
 import { MDBContainer, MDBRow, MDBIcon, MDBInput, MDBCol, MDBBtn } from 'mdbreact';
 import axios from 'axios';
 
-const API_PATH = 'https://samburkett.com/api/contact/index.php';
+const API_PATH = 'localhost:5000/api/contact';
 
 class Form extends React.Component {
     constructor(props) {
@@ -21,7 +21,7 @@ class Form extends React.Component {
         axios({
           method: 'post',
           url: `${API_PATH}`,
-          headers: { 'content-type': 'application/json' },
+          // headers: { 'content-type': 'application/json' },
           data: this.state
         })
           .then(result => {
