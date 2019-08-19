@@ -6,6 +6,8 @@ const exphbs = require('express-handlebars');
 const nodemailer = require('nodemailer');
 
 const app = express();
+
+//Cors
 app.use(cors());
 
 // Serve the static files from the React app
@@ -15,16 +17,17 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-
 // An api endpoint
 app.get('/api/contact', (req,res) => {
-    console.log(req.body);
+    res.send('TEST');
 });
 
-// Handles any requests that don't match the ones above
-app.get('*', (req,res) =>{
+// The "catchall" handler: for any request that doesn't
+// match one above, send back React's index.html file.
+app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname+'/client/build/index.html'));
-});
+  });
+
 
 const port = process.env.PORT || 5000;
 app.listen(port);
