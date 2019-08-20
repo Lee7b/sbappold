@@ -14,7 +14,7 @@ class Home extends React.Component {
                     <MDBCol className="py-5">
                         <MDBCardTitle className="h1-responsive pt-3 m-5 font-bold">Hello world!</MDBCardTitle>
                         <p className="mx-5 mb-5">
-                            This website is a personal project of mine that I've been working on. It uses a React front-end 
+                            This website is a personal project of mine that I've been working on. It is currently hosted on Heroku, and uses a React front-end 
                             with an Express back-end running on NodeJS. For the design I am using Material Design
                             bootstrap for React.
                             I plan on implementing a NoSQL database as well
