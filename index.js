@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // An api endpoint
-app.post('/api/contact', (req,res) => {
+app.post('/api/contact', async (req,res) => {
     console.log(req.body);
     const output = `
         <h3>Contact Details</h3>
