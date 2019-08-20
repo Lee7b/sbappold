@@ -22,7 +22,8 @@ app.use(bodyParser.json());
 // An api endpoint
 app.post('/api/contact', async (req,res) => {
     console.log(req.body);
-    console.log(process.env.NODEMAIL_USER);
+    console.log(process.env.NODEMAILER_USER);
+    console.log(process.env.NODEMAILER_PW);
     const output = `
         <h3>Contact Details</h3>
         <ul>
