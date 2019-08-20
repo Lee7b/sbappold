@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 // An api endpoint
 app.post('/api/contact', async (req,res) => {
     console.log(req.body);
-    console.log(process.env.NODEMAILER_USER);
+    console.log(process.env.NODEMAILER_USER.valueOf);
     console.log(process.env.NODEMAILER_PW);
     const output = `
         <h3>Contact Details</h3>
@@ -39,8 +39,8 @@ app.post('/api/contact', async (req,res) => {
         port: 587,
         secure: false, // true for 465, false for other ports
         auth: {
-            user: process.env.NODEMAILER_USER, // generated ethereal user
-            pass: process.env.NODEMAILER_PW // generated ethereal password
+            user: process.env.NODEMAILER_USER.valueOf, // generated ethereal user
+            pass: process.env.NODEMAILER_PW.valueOf // generated ethereal password
         }
     });
 
