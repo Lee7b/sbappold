@@ -10,24 +10,23 @@ export default class Footer extends React.Component {
                 <MDBCol md="6">
                   <h5 className="title">Sam Burkett</h5>
                   <p>
-                    Here you can use rows and columns here to organize your footer
-                    content.
+                    Thank you for visiting my website. If you have any inquiries please use the Contact page. I will respond to emails promptly! Thanks!
                   </p>
                  </MDBCol>
                 <MDBCol md="6">
                   <h5 className="title">Links</h5>
                     <ul>
                       <li className="list-unstyled">
-                      <a href="#!">Link 1</a>
+                      <a href="/">Home</a>
                       </li>
                       <li className="list-unstyled">
-                      <a href="#!">Link 2</a>
+                      <a href="https://www.linkedin.com/in/samuel-burkett/">LinkedIn</a>
                       </li>
                       <li className="list-unstyled">
-                      <a href="#!">Link 3</a>
+                      <a href="#!">GitHub</a>
                       </li>
                       <li className="list-unstyled">
-                      <a href="#!">Link 4</a>
+                      <a href="#!">Facebook</a>
                      </li>
                    </ul>
                 </MDBCol>
