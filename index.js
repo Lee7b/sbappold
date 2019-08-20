@@ -25,6 +25,8 @@ app.post('/api/contact', async (req,res) => {
         <ul>
             <li>Name: ${req.body.name} </li>
             <li>Email: ${req.body.email} </li>
+            <li>Subject: ${req.body.subject} </li>
+            <li>Message: ${req.body.message} </li>            
     `;
 
     // create reusable transporter object using the default SMTP transport
@@ -33,8 +35,8 @@ app.post('/api/contact', async (req,res) => {
         port: 587,
         secure: false, // true for 465, false for other ports
         auth: {
-            user: 'sburk377@gmail.com', // generated ethereal user
-            pass: 'samlee#Wyatt12!' // generated ethereal password
+            user: 'lee7burk@gmail.com', // generated ethereal user
+            pass: 'samjakekate' // generated ethereal password
         }
     });
 
