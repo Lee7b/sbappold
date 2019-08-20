@@ -13,7 +13,8 @@ class About extends React.Component {
                     <MDBCardBody>
                     <MDBCardTitle>About</MDBCardTitle>
                     <MDBCardText>
-                          <MDBBtn href="https://drive.google.com/file/d/1iS0ZkN1wvduHc7CUnXjO65SqLDJIX6b-/view?usp=sharing">Resume</MDBBtn>
+                          <MDBBtn href="https://drive.google.com/file/d/1iS0ZkN1wvduHc7CUnXjO65SqLDJIX6b-/view?usp=sharing">View Resume</MDBBtn>
+                          <br></br>
                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                            Nulla mattis nibh mattis velit varius consectetur. Nulla
                            dictum ante et nulla aliquam condimentum. Praesent 
