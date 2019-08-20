@@ -7,6 +7,8 @@ const nodemailer = require('nodemailer');
 
 const app = express();
 
+var env = process.env.NODE_ENV || 'development';
+
 //Cors
 app.use(cors());
 
@@ -20,6 +22,7 @@ app.use(bodyParser.json());
 // An api endpoint
 app.post('/api/contact', async (req,res) => {
     console.log(req.body);
+    console.log(process.env.NODEMAIL_USER);
     const output = `
         <h3>Contact Details</h3>
         <ul>
@@ -35,8 +38,8 @@ app.post('/api/contact', async (req,res) => {
         port: 587,
         secure: false, // true for 465, false for other ports
         auth: {
-            user: process.env.NODEMAILER_USER, // generated ethereal user
-            pass: process.env.NODEMAILER_PW // generated ethereal password
+            user: process.env.NODEMAIL_USER, // generated ethereal user
+            pass: process.env.NODEMAIL_PW // generated ethereal password
         }
     });
 
