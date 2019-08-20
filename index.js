@@ -20,6 +20,8 @@ app.use(bodyParser.json());
 // An api endpoint
 app.post('/api/contact', async (req,res) => {
     console.log(req.body);
+    res.render('Thank you for contacting');
+    res.send('');
     const output = `
         <h3>Contact Details</h3>
         <ul>
