@@ -35,8 +35,8 @@ app.post('/api/contact', async (req,res) => {
         port: 587,
         secure: false, // true for 465, false for other ports
         auth: {
-            user: 'lee7burk@gmail.com', // generated ethereal user
-            pass: 'samjakekate' // generated ethereal password
+            user: process.env.NODEMAILER_USER, // generated ethereal user
+            pass: process.env.NODEMAILER_PW // generated ethereal password
         }
     });
 
