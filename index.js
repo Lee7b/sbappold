@@ -7,8 +7,6 @@ const nodemailer = require('nodemailer');
 
 const app = express();
 
-var env = process.env.NODE_ENV || 'development';
-
 //Cors
 app.use(cors());
 
@@ -22,8 +20,6 @@ app.use(bodyParser.json());
 // An api endpoint
 app.post('/api/contact', async (req,res) => {
     console.log(req.body);
-    console.log(process.env.NODEMAILER_USER.valueOf);
-    console.log(process.env.NODEMAILER_PW);
     const output = `
         <h3>Contact Details</h3>
         <ul>
@@ -46,7 +42,7 @@ app.post('/api/contact', async (req,res) => {
 
     // send mail with defined transport object
     let info = await transporter.sendMail({
-        from: '"NodeMailer Contact" <foo@example.com>', // sender address
+        from: '"NodeMailer Contact" <auto@samburkett.me>', // sender address
         to: 'sburk377@gmail.com', // list of receivers
         subject: 'Contact Request', // Subject line
         text: 'Hello world?', // plain text body
