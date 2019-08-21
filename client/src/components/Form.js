@@ -36,11 +36,11 @@ class Form extends React.Component {
 
         return (
           <div className="container">
-            <MDBContainer style={{paddingLeft: "50px"}}>
+            <MDBContainer>
             {/* <MDBContainer className="d-flex justify-content-center"> */}
             <MDBRow>
-                {/* <MDBCol> */}
                 <MDBCol>
+                {/* <MDBCol md="6"> */}
                     <p className="h5 text-center mb-4">Contact</p>
                     <div className="grey-text">
                     <MDBInput
