@@ -26,7 +26,7 @@ class Form extends React.Component {
         })
           .then(result => {
             this.setState({
-              mailSent: result.data.sent
+              mailSent: true
             })
           })
           .catch(error => this.setState({ error: error.message }));
