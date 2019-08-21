@@ -35,19 +35,19 @@ app.post('/api/contact', async (req,res) => {
 
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
+        host: 'in-v3.mailjet.com',
         port: 587,
         secure: false, // true for 465, false for other ports
         auth: {
-            user: process.env.NODEMAILER_USER, // generated ethereal user
-            pass: process.env.NODEMAILER_PW    // generated ethereal password
+            user: '83057429a9101486ea84bf3f4435a496', // generated ethereal user
+            pass: '5033245dfb61dfd95722430adc846fd9'    // generated ethereal password
         }
     });
 
     // send mail with defined transport object
     let info = await transporter.sendMail({
         from: '"NodeMailer Contact" <foo@example.com>', // sender address
-        to: 'sb@samburkett.com', // list of receivers
+        to: 'sburk377@gmail.com', // list of receivers
         subject: 'Contact Request', // Subject line
         text: 'Hello world?', // plain text body
         html: output // html body
