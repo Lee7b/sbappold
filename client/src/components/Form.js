@@ -3,7 +3,6 @@ import { MDBContainer, MDBRow, MDBIcon, MDBInput, MDBCol, MDBBtn } from 'mdbreac
 import axios from 'axios';
 
 const API_PATH = 'http://sbreactapp.herokuapp.com/api/contact';
-var msg;
 
 class Form extends React.Component {
     constructor(props) {
@@ -33,10 +32,8 @@ class Form extends React.Component {
           .then(response => {
             if (response.data.msg === 'success') {
               alert("Thank you for reaching out. I will get back to you asap!");
-              msg = "Thank you.";
             } else {
               alert("Error sending message");
-              msg = "error";
             }
           })
           .catch(error => this.setState({ error: error.message }));
@@ -95,7 +92,6 @@ class Form extends React.Component {
                     <MDBBtn outline color="secondary" onClick={e => this.handleFormSubmit(e)} value="Submit">
                         Send <MDBIcon far icon="paper-plane" className="ml-1" />
                     </MDBBtn>
-                    {msg}
                     </div>
                 </MDBCol>
             </MDBRow>
