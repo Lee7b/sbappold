@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol } from "mdbreact";
+import { MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol, MDBIframe } from "mdbreact";
 
 class About extends React.Component {
     render() {
@@ -13,8 +13,6 @@ class About extends React.Component {
                     <MDBCardBody>
                     <MDBCardTitle>About</MDBCardTitle>
                     <MDBCardText>
-                          <MDBBtn href="https://drive.google.com/file/d/1iS0ZkN1wvduHc7CUnXjO65SqLDJIX6b-/view?usp=sharing">View Resume</MDBBtn>
-                          <br></br>
                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                            Nulla mattis nibh mattis velit varius consectetur. Nulla
                            dictum ante et nulla aliquam condimentum. Praesent 
@@ -40,6 +38,8 @@ class About extends React.Component {
                     </MDBCardBody>
                 </MDBCard>
                 </MDBCol>
+                <br></br>
+                <MDBIframe src="https://www.docdroid.net/Locr3Zm/resume.pdf" />
              </div> 
            </Layout>
     );
