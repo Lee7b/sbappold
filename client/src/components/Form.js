@@ -25,7 +25,9 @@ class Form extends React.Component {
         })
           .then(response => {
             if (response.data.msg === 'success') {
-              alert("Thank you");
+              alert("Thank you for reaching out. I will get back to you asap!");
+            } else {
+              alert("Error sending message");
             }
           })
           .catch(error => this.setState({ error: error.message }));
