@@ -18,7 +18,7 @@ class Form extends React.Component {
       handleFormSubmit( e ) {
         e.preventDefault();
 
-        if (this.state.name === '') {
+        if (!this.state.name) {
           return alert("Blank name");
         }
 
