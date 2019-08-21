@@ -2,7 +2,7 @@ import React from "react";
 import { MDBContainer, MDBRow, MDBIcon, MDBInput, MDBCol, MDBBtn } from 'mdbreact';
 import axios from 'axios';
 
-const API_PATH = 'http://samburkett.me/api/contact';
+const API_PATH = 'samburkett.me/api/contact';
 
 class Form extends React.Component {
     constructor(props) {
