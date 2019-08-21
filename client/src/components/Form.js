@@ -13,7 +13,6 @@ class Form extends React.Component {
           subject: '',
           message: '',
           error: null,
-          mailSent: false
         }
       }
       handleFormSubmit( e ) {
@@ -24,10 +23,10 @@ class Form extends React.Component {
           headers: { 'content-type': 'application/json' },
           data: this.state
         })
-          .then(result => {
-            this.setState({
-              mailSent: true
-            })
+          .then(response => {
+            if (response.data.msg === 'success') {
+              alert("Thank you");
+            }
           })
           .catch(error => this.setState({ error: error.message }));
       
@@ -85,7 +84,6 @@ class Form extends React.Component {
                     <MDBBtn outline color="secondary" onClick={e => this.handleFormSubmit(e)} value="Submit">
                         Send <MDBIcon far icon="paper-plane" className="ml-1" />
                     </MDBBtn>
-                    {this.state.mailSent &&<div>Thank you for contcting us.</div>}
                     </div>
                 </MDBCol>
             </MDBRow>
