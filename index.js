@@ -47,6 +47,16 @@ app.post('/api/contact', async (req,res) => {
         subject: 'Contact Request', // Subject line
         text: output, // plain text body
         html: output // html body
+    }, (err, data) => {
+        if (err) {
+            res.json({
+              msg: 'fail'
+            })
+          } else {
+            res.json({
+              msg: 'success'
+            })
+          }
     });
 });
 
