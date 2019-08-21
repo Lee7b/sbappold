@@ -18,8 +18,8 @@ class Form extends React.Component {
       handleFormSubmit( e ) {
         e.preventDefault();
 
-        if (!this.state.name) {
-          return alert("Blank name");
+        if (!this.state.name || !this.state.email || !this.state.subject || !this.state.message) {
+          return alert("One or more fields are blank. Please try again");
         }
 
         axios({
