@@ -48,6 +48,7 @@ app.post('/api/contact', async (req,res) => {
         text: 'Hello world?', // plain text body
         html: output // html body
     });
+    res.render('Form', {msg: 'Email sent'})
 });
 
 // The "catchall" handler: for any request that doesn't
