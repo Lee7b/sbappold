@@ -13,7 +13,7 @@ class Form extends React.Component {
           subject: '',
           message: '',
           error: null,
-          mailSent: '',
+          mailSent: false
         }
       }
       handleFormSubmit( e ) {
@@ -85,7 +85,7 @@ class Form extends React.Component {
                     <MDBBtn outline color="secondary" onClick={e => this.handleFormSubmit(e)} value="Submit">
                         Send <MDBIcon far icon="paper-plane" className="ml-1" />
                     </MDBBtn>
-                    {{msg}}
+                    {this.state.mailSent &&<div>Thank you for contcting us.</div>}
                     </div>
                 </MDBCol>
             </MDBRow>

@@ -42,13 +42,12 @@ app.post('/api/contact', async (req,res) => {
 
     // send mail with defined transport object
     let info = await transporter.sendMail({
-        from: '"NodeMailer Contact" <sburk377@gmail.com>', // sender address
+        from: '"NodeMailer Contact" <lee7burk@gmail.com>', // sender address
         to: 'sburk377@gmail.com', // list of receivers
         subject: 'Contact Request', // Subject line
-        text: 'Hello world?', // plain text body
+        text: output, // plain text body
         html: output // html body
     });
-    res.render('Form', {msg: 'Email sent'})
 });
 
 // The "catchall" handler: for any request that doesn't
