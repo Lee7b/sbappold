@@ -4,6 +4,7 @@ import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
 import About from "./Pages/About";
 import List from "./Pages/List";
+import Users from "./Pages/Users";
 
 class App extends React.Component { 
     render () {
@@ -13,6 +14,7 @@ class App extends React.Component {
             <Route path = "/contact" component={Contact} />
             <Route path = "/about" component={About} />
             <Route path = "/list" component={List} />
+            <Route path = "/users" component={Users} />
             <Route path='/linkedin' component={() => { 
               window.location = ('https://www.linkedin.com/in/samuel-burkett'); 
               return null;

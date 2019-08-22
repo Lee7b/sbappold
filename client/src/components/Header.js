@@ -31,6 +31,9 @@ class Header extends React.Component {
                 <MDBNavItem className={(currentLocation === '/about' ? 'active' : '')}>
                   <MDBNavLink to="/about">About</MDBNavLink>
                 </MDBNavItem>
+                <MDBNavItem className={(currentLocation === '/users' ? 'active' : '')}>
+                  <MDBNavLink to="/users">API TEST</MDBNavLink>
+                </MDBNavItem>
                 <MDBNavItem>
                   <MDBDropdown>
                     <MDBDropdownToggle nav caret>
