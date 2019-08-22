@@ -14,12 +14,11 @@ class Home extends React.Component {
                     <MDBCol className="py-5">
                         <MDBCardTitle className="h1-responsive pt-3 m-5 font-bold">Hello world!</MDBCardTitle>
                         <p className="mx-5 mb-5">
-                            This website is a personal project of mine that I've been working on. It is currently hosted on Heroku, and uses a React front-end 
-                            with an Express back-end running on NodeJS. For the design I am using Material Design
+                            This website is a personal project of mine that I've been working on when time permits. It's a single page application that it is currently hosted on Heroku, and uses a React front-end 
+                            with an Express back-end running on Node. For the design I am using Material Design
                             bootstrap for React.
-                            I plan on implementing a NoSQL database as well
-                            using MongoDB in the future. This has been something that I have really enjoyed working on
-                            and I definitely have a passion for programming!
+                            I will add more components and features as time goes on. Including a weather page, an online poker game with chat, secure register and log in capability,
+                            and more. 
                         </p>
                         <MDBBtn outline color="white" className="mb-5"><MDBIcon icon="clone" className="mr-2"></MDBIcon> View project</MDBBtn>
                     </MDBCol>

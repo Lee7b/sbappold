@@ -15,7 +15,13 @@ class About extends React.Component {
                     <MDBCardBody>
                     <MDBCardTitle>About</MDBCardTitle>
                     <MDBCardText>
-                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                          I am currently a mainframe systems programmer, specializing in IBM zEnterprise systems. I have a computer science background
+                          and a passion for programming and problem solving. The languages that I use the most on the job right now are JCL (Job Control Language), Assembler,
+                          COBOL, and a little bit of Java. I also use UNIX commands a fair bit. In my spare time I enjoy solving programming challenges. My language
+                          of choice is Javascript. I love learning new tools and frameworks that can help make me a better programmer. My plan is to keep working on this site so I can use it as something to track my progress and
+                          skill development. Thanks for checking me out and please email me if you have any questions, or just want to say hello.
+                          <br /> <br />
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                            Nulla mattis nibh mattis velit varius consectetur. Nulla
                            dictum ante et nulla aliquam condimentum. Praesent 
                            ullamcorper porttitor ante quis semper. Pellentesque 
@@ -23,19 +29,6 @@ class About extends React.Component {
                            efficitur ultricies imperdiet. Nunc vehicula sapien 
                            vitae arcu pretium, eget euismod purus sagittis. Fusce 
                            condimentum quis ante sed maximus.
-                          <br /> <br />
-                           Proin semper, libero nec facilisis condimentum, 
-                           felis velit tempus metus, sed volutpat ex urna fringilla arcu. 
-                           Phasellus iaculis auctor maximus. Fusce interdum, purus eu viverra
-                           vulputate, leo nunc tempus lacus, a tincidunt libero erat id
-                           arcu. Vestibulum erat lorem, egestas vitae urna ut, elementum 
-                           venenatis nulla. Praesent imperdiet nisl vel velit elementum, 
-                           eu sagittis nunc ultricies. Ut porta, risus mollis egestas
-                           tincidunt, sapien leo malesuada urna, et dapibus sem nunc
-                           vel leo. Aenean lacinia condimentum vestibulum. Fusce pharetra 
-                           ultrices dolor vitae placerat. In nisl mauris, tincidunt nec 
-                           lobortis nec, hendrerit ut urna. Quisque pulvinar mi sed massa
-                           pulvinar posuere. Curabitur rutrum velit neque.
                     </MDBCardText>
                     </MDBCardBody>
                 </MDBCard>
