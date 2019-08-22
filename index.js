@@ -3,8 +3,16 @@ const path = require('path');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
+const mongoose = require('mongoose');
 
+//Express
 const app = express();
+
+//Mongoose
+const mongoDB = 'mongodb+srv://redfrog:<Y7G9tThNxJeWdoQI>@cluster0-bbsxk.mongodb.net/test?retryWrites=true&w=majority';
+mongoose.connect(mongoDB, { useNewUrlParser: true });
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'MongoDB Connection Error'));
 
 //Cors
 app.use(cors());
