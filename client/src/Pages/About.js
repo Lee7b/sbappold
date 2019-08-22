@@ -6,7 +6,9 @@ class About extends React.Component {
     render() {
     return (
             <Layout>
-              <div className="container">       
+              <div className="container">      
+                <br /> <br />
+                <MDBIframe src="https://www.docdroid.net/Locr3Zm/resume.pdf" />
                 <MDBCol className="d-flex justify-content-center" style ={{ paddingTop: "20px" }}>
                 <MDBCard style={{ width: "30rem" }}>
                     <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" waves />
@@ -21,7 +23,7 @@ class About extends React.Component {
                            efficitur ultricies imperdiet. Nunc vehicula sapien 
                            vitae arcu pretium, eget euismod purus sagittis. Fusce 
                            condimentum quis ante sed maximus.
-                          <br></br><br></br>
+                          <br /> <br />
                            Proin semper, libero nec facilisis condimentum, 
                            felis velit tempus metus, sed volutpat ex urna fringilla arcu. 
                            Phasellus iaculis auctor maximus. Fusce interdum, purus eu viverra
@@ -38,8 +40,7 @@ class About extends React.Component {
                     </MDBCardBody>
                 </MDBCard>
                 </MDBCol>
-                <br></br>
-                <MDBIframe src="https://www.docdroid.net/Locr3Zm/resume.pdf" />
+                <br />
              </div> 
            </Layout>
     );
