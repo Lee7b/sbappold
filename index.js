@@ -9,9 +9,15 @@ const mongoose = require('mongoose');
 const app = express();
 
 //Mongoose
-const mongoDB = 'mongodb+srv://redfrog:<Y7G9tThNxJeWdoQI>@cluster0-bbsxk.mongodb.net/test?retryWrites=true&w=majority';
+const mongoDB = 'mongodb+srv://redfrog:Y7G9tThNxJeWdoQI@cluster0-bbsxk.mongodb.net/test?retryWrites=true&w=majority';
 mongoose.connect(mongoDB, { useNewUrlParser: true });
 var db = mongoose.connection;
+
+//On connection
+db.on('connected', () => {
+  console.log('Connected to db ' + config.database);
+})
+//On error
 db.on('error', console.error.bind(console, 'MongoDB Connection Error'));
 
 //Cors
