@@ -16,7 +16,7 @@ class Home extends React.Component {
                         <p className="mx-5 mb-5">
                             This website is a personal project of mine that I've been working on when time permits. It's a single page application that it is currently hosted on Heroku. It uses a React front-end 
                             with a node/express back-end. For the design I am using Material Design
-                            bootstrap for React. I cannot say enough good things about it!
+                            bootstrap for React. I cannot say enough good things about it! I'm utilizing a REST API for the contact component to send form data from the front-end to the back-end.
                             I will add more components and features as time goes on. Including a weather page, an online poker game with chat, secure register and log in capability,
                             and more. 
                         </p>
