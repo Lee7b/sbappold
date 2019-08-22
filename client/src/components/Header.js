@@ -15,7 +15,7 @@ class Header extends React.Component {
         const currentLocation = this.props.location.pathname;
       
         return (
-          <MDBNavbar color="blue-grey darken-3" dark expand="md">
+          <MDBNavbar className="fixed-top" color="blue-grey darken-3" dark expand="md">
             <MDBNavbarBrand>
               <strong className="white-text">SB</strong>
             </MDBNavbarBrand>
@@ -29,7 +29,7 @@ class Header extends React.Component {
                   <MDBNavLink to="/contact">Contact</MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem className={(currentLocation === '/about' ? 'active' : '')}>
-                  <MDBNavLink to="/about">About</MDBNavLink>
+                  <MDBNavLink to="/about">Experience</MDBNavLink>
                 </MDBNavItem>
                 <MDBNavItem className={(currentLocation === '/users' ? 'active' : '')}>
                   <MDBNavLink to="/users">API TEST</MDBNavLink>

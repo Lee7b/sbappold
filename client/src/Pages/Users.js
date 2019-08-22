@@ -1,4 +1,5 @@
 import React from 'react';
+import Layout from "../components/Layout";
 //import Data from "../api/data/users.json";
 
 
@@ -17,9 +18,16 @@ export default class Users extends React.Component {
 
     render() {
         return (
-            <div>
-                {this.state.loading || !this.state.person ? <div>Loading random user. . .</div> 
+            <Layout>
+            <br /><br /><br />
+            <div className = "container">
+                {this.state.loading || !this.state.person ? <div>Loading random user. . .
+                <div className="spinner-border text-primary" role="status">
+                    <span className="sr-only">Loading...</span>
+                </div>
+                </div>
                 : <div>
+                    <div><h3>This is a randomly generated user</h3></div>
                     <div>First Name: {this.state.person.name.first}</div>
                     <div>Last Name: {this.state.person.name.last}</div>
                     <div>Gender: {this.state.person.gender}</div>
@@ -27,6 +35,8 @@ export default class Users extends React.Component {
                     <div>Email: {this.state.person.email}</div>
                   </div>}
             </div>
+            <br /><br /><br />
+            </Layout>
         )
     }
 };
