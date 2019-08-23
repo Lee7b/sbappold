@@ -15,12 +15,12 @@ class App extends React.Component {
             <Route path = "/about" component={About} />
             <Route path = "/list" component={List} />
             <Route path = "/users" component={Users} />
-            <Route path='/linkedin' component={() => { 
-              window.location = ('https://www.linkedin.com/in/samuel-burkett'); 
+            <Route path="/linkedin" component={() => { 
+              window.location = ("https://www.linkedin.com/in/samuel-burkett"); 
               return null;
             }}/>
             <Route path='/github' component={() => { 
-              window.location = ('https://github.com/Lee7b'); 
+              window.location = ("https://github.com/Lee7b"); 
               return null;
             }}/>
           </BrowserRouter>

@@ -1,8 +1,8 @@
 import React from "react";
-import { MDBContainer, MDBRow, MDBIcon, MDBInput, MDBCol, MDBBtn } from 'mdbreact';
-import axios from 'axios';
+import { MDBContainer, MDBRow, MDBIcon, MDBInput, MDBCol, MDBBtn } from "mdbreact";
+import axios from "axios";
 
-const API_PATH = 'http://sbreactapp.herokuapp.com/api/contact';
+const API_PATH = "http://sbreactapp.herokuapp.com/api/contact";
 
 class Form extends React.Component {
     constructor(props) {
@@ -24,13 +24,13 @@ class Form extends React.Component {
         }
 
         axios({
-          method: 'post',
+          method: "post",
           url: `${API_PATH}`,
-          headers: { 'content-type': 'application/json' },
+          headers: { "content-type": "application/json" },
           data: this.state
         })
           .then(response => {
-            if (response.data.msg === 'success') {
+            if (response.data.msg === "success") {
               alert("Thank you for reaching out. I will get back to you asap!");
             } else {
               alert("Error sending message");
