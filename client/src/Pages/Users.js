@@ -1,6 +1,6 @@
 import React from 'react';
-import Layout from "../components/Layout";
-//import Data from "../api/data/users.json";
+import Layout from '../components/Layout';
+//import Data from '../api/data/users.json';
 
 
 export default class Users extends React.Component {
@@ -10,7 +10,7 @@ export default class Users extends React.Component {
     };
 
     async componentDidMount() {
-        const url = "https://randomuser.me/api/";
+        const url = 'https://randomuser.me/api/';
         const response = await fetch(url);
         const data = await response.json();
         this.setState({ person: data.results[0], loading: false })

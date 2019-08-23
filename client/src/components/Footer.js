@@ -1,5 +1,5 @@
-import React from "react";
-import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
+import React from 'react';
+import { MDBCol, MDBContainer, MDBRow, MDBFooter } from 'mdbreact';
 // import "./style.css";
 
 export default class Footer extends React.Component { 
@@ -35,7 +35,7 @@ export default class Footer extends React.Component {
             </MDBContainer>
            <div className="footer-copyright text-center py-3">
              <MDBContainer fluid>
-                &copy; {new Date().getFullYear()} Copyright: <a href="https://www.SamBurkett.com"> SamBurkett.com </a>
+                &copy; {new Date().getFullYear()} Copyright: <a href="https://www.SamBurkett.me"> SamBurkett.me </a>
              </MDBContainer>
            </div>
           </MDBFooter>

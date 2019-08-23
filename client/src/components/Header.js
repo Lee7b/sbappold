@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
-  MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon } from "mdbreact";
-import { withRouter } from "react-router-dom";
+  MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon } from 'mdbreact';
+import { withRouter } from 'react-router-dom';
 
 class Header extends React.Component { 
   state = {

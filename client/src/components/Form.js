@@ -1,8 +1,8 @@
-import React from "react";
-import { MDBContainer, MDBRow, MDBIcon, MDBInput, MDBCol, MDBBtn } from "mdbreact";
-import axios from "axios";
+import React from 'react';
+import { MDBContainer, MDBRow, MDBIcon, MDBInput, MDBCol, MDBBtn } from 'mdbreact';
+import axios from 'axios';
 
-const API_PATH = "http://sbreactapp.herokuapp.com/api/contact";
+const API_PATH = 'http://sbreactapp.herokuapp.com/api/contact';
 
 class Form extends React.Component {
     constructor(props) {
@@ -20,20 +20,20 @@ class Form extends React.Component {
 
         //Check if form fields are blank
         if (!this.state.name || !this.state.email || !this.state.subject || !this.state.message) {
-          return alert("One or more fields are blank. Please try again");
+          return alert('One or more fields are blank. Please try again');
         }
 
         axios({
-          method: "post",
+          method: 'post',
           url: `${API_PATH}`,
-          headers: { "content-type": "application/json" },
+          headers: { 'content-type': 'application/json' },
           data: this.state
         })
           .then(response => {
-            if (response.data.msg === "success") {
-              alert("Thank you for reaching out. I will get back to you asap!");
+            if (response.data.msg === 'success') {
+              alert('Thank you for reaching out. I will get back to you asap!');
             } else {
-              alert("Error sending message");
+              alert('Error sending message');
             }
           })
           .catch(error => this.setState({ error: error.message }));

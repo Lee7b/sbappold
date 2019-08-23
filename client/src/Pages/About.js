@@ -1,6 +1,6 @@
-import React from "react";
-import Layout from "../components/Layout";
-import { MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol, MDBIframe } from "mdbreact";
+import React from 'react';
+import Layout from '../components/Layout';
+import { MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol, MDBIframe } from 'mdbreact';
 
 class About extends React.Component {
     render() {

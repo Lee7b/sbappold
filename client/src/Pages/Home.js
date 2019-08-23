@@ -1,6 +1,6 @@
-import React from "react";
-import Layout from "../components/Layout";
-import { MDBJumbotron, MDBBtn, MDBContainer, MDBRow, MDBCol, MDBCardTitle, MDBIcon } from "mdbreact";
+import React from 'react';
+import Layout from '../components/Layout';
+import { MDBJumbotron, MDBBtn, MDBContainer, MDBRow, MDBCol, MDBCardTitle, MDBIcon } from 'mdbreact';
 
 class Home extends React.Component {
     render () {
