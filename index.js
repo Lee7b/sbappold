@@ -17,6 +17,7 @@ var db = mongoose.connection;
 db.on('connected', () => {
   console.log('Connected to db');
 })
+
 //On error
 db.on('error', console.error.bind(console, 'MongoDB Connection Error'));
 

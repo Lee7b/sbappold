@@ -1,7 +1,7 @@
 import React from 'react';
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
   MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon } from 'mdbreact';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 
 class Header extends React.Component { 
   state = {
@@ -15,7 +15,7 @@ class Header extends React.Component {
         const currentLocation = this.props.location.pathname;
       
         return (
-          <MDBNavbar className="fixed-top" color="blue-grey darken-3" dark expand="md">
+          <MDBNavbar color="blue-grey darken-3" dark expand="md">
             <MDBNavbarBrand>
               <strong className="white-text">SB</strong>
             </MDBNavbarBrand>
@@ -40,10 +40,10 @@ class Header extends React.Component {
                       <div className="d-none d-md-inline">Projects</div>
                     </MDBDropdownToggle>
                     <MDBDropdownMenu className="dropdown-default">
-                      <MDBDropdownItem href="#!">Project 1</MDBDropdownItem>
-                      <MDBDropdownItem href="#!">Project 2</MDBDropdownItem>
-                      <MDBDropdownItem href="#!">Project 3</MDBDropdownItem>
-                      <MDBDropdownItem href="#!">Project 4</MDBDropdownItem>
+                      <MDBDropdownItem><Link to="/rpsgame">Rock Paper Scissors</Link></MDBDropdownItem>
+                      <MDBDropdownItem><Link to="/">Project 2</Link></MDBDropdownItem>
+                      <MDBDropdownItem><Link to="/">Project 3</Link></MDBDropdownItem>
+                      <MDBDropdownItem><Link to="/">Project 4</Link></MDBDropdownItem>
                     </MDBDropdownMenu>
                  </MDBDropdown>
                 </MDBNavItem>
