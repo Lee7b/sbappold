@@ -1,6 +1,5 @@
 import React from 'react';
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from 'mdbreact';
-// import "./style.css";
 
 export default class Footer extends React.Component { 
     render () {
