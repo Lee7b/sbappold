@@ -1,7 +1,7 @@
 import React from 'react';
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
   MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon } from 'mdbreact';
-import { withRouter, Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
 class Header extends React.Component { 
   state = {
@@ -40,10 +40,10 @@ class Header extends React.Component {
                       <div className="d-none d-md-inline">Projects</div>
                     </MDBDropdownToggle>
                     <MDBDropdownMenu className="dropdown-default">
-                      <MDBDropdownItem><Link to="/rpsgame">Rock Paper Scissors</Link></MDBDropdownItem>
-                      <MDBDropdownItem><Link to="/">Project 2</Link></MDBDropdownItem>
-                      <MDBDropdownItem><Link to="/">Project 3</Link></MDBDropdownItem>
-                      <MDBDropdownItem><Link to="/">Project 4</Link></MDBDropdownItem>
+                      <MDBDropdownItem href="/rpsgame">Rock Paper Scissors</MDBDropdownItem>
+                      <MDBDropdownItem href="/">Project 2</MDBDropdownItem>
+                      <MDBDropdownItem href="/">Project 3</MDBDropdownItem>
+                      <MDBDropdownItem href="/">Project 4</MDBDropdownItem>
                     </MDBDropdownMenu>
                  </MDBDropdown>
                 </MDBNavItem>

@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 //import Data from '../api/data/users.json';
 
 
-export default class Users extends React.Component {
+class Users extends React.Component {
     state = {
         loading: true,
         person: null,
@@ -41,6 +41,7 @@ export default class Users extends React.Component {
     }
 };
 
+export default Users;
 
 // class Users extends Component {
 //     render () {
@@ -62,4 +63,4 @@ export default class Users extends React.Component {
 //         )
 //     }
 // }
-// export default Users;
+//
