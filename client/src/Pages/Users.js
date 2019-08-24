@@ -20,6 +20,7 @@ class Users extends React.Component {
         return (
             <Layout>
             <br /><br /><br />
+            TEST2
             <div className = "container">
                 {this.state.loading || !this.state.person ? <div>Loading random user. . .
                 <div className="spinner-border text-primary" role="status">
