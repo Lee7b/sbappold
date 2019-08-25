@@ -3,7 +3,7 @@ const router = express.Router();
 const nodemailer = require('nodemailer');
 
 // An api endpoint
-router.get('/', async (req, res) => {
+router.post('/', async (req, res) => {
     console.log(req.body);
     const output = `
         <h3>Contact Details</h3>
