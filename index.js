@@ -32,7 +32,7 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.use('api/contact', contactRoute);
+app.use('/api/contact', contactRoute);
 
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
