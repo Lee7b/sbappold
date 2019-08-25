@@ -5,7 +5,7 @@ import Contact from './Pages/Contact';
 import About from './Pages/About';
 import List from './Pages/List';
 import Users from './Pages/Users';
-import Rpsgame from './Pages/rpsg';
+import Rpsgame from './Pages/Rpsgame';
 
 class App extends React.Component { 
     render () {
