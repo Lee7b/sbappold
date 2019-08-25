@@ -29,7 +29,6 @@ class Rpsgame extends React.Component {
             <Layout>
                 <div className="container text-center">
                     <br /><br />
-                    <h1 className="text-center">Rock Paper Scissors</h1>
                     <div><h2>{ this.state.results[2] }</h2></div>
                     <div><h1>SCORE</h1></div>
                     <div><h2> { this.state.userPoints } : { this.state.computerPoints } </h2></div>
