@@ -15,12 +15,12 @@ module.exports = {
             case 'rockscissors':
             case 'paperrock':
             case 'scissorspaper':
-                result = 'User Wins';
+                result = 'You Win!';
                 break;
             case 'rockpaper':
             case 'paperscissors':
             case 'scissorsrock':
-                result ='Computer Wins';
+                result ='Opponent Wins';
                 break; 
             default: break;
         }

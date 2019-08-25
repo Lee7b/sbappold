@@ -17,9 +17,9 @@ class About extends React.Component {
                     <MDBCardText>
                           I am currently a mainframe systems programmer, specializing in IBM zEnterprise systems. I have a computer science background
                           and a passion for programming and problem solving. The languages that I use the most on the job right now are JCL (Job Control Language), Assembler,
-                          COBOL, and a little bit of Java. I also use UNIX commands a fair bit. In my spare time I enjoy solving programming challenges. My language
-                          of choice is Javascript. I love learning new tools and frameworks that can help make me a better programmer. My plan is to keep working on this site so I can use it as something to track my progress and
-                          skill development. Thanks for checking me out and please email me if you have any questions, or just want to say hello.
+                          COBOL, and a little bit of Java. I also use Unix commands a fair bit. My favorite language to use on my personal projects is JavaScript. I love learning new tools and frameworks
+                          that can help make me a better programmer! My plan is to keep working on this website so I can use it as a gauge to track my progress and
+                          skill development. Thanks for checking me out and please email me if you have any questions or just want to say hi!
                           <br /> <br />
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                            Nulla mattis nibh mattis velit varius consectetur. Nulla
