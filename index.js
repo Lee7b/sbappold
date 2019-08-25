@@ -9,7 +9,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 //Mongoose
-const mongoDB = 'mongodb+srv://redfrog:Y7G9tThNxJeWdoQl@cluster0-bbsxk.mongodb.net/test?retryWrites=true&w=majority';
+const mongoDB = PROCESS.ENV.DB_CONNECTION;
 mongoose.connect(mongoDB, { useNewUrlParser: true });
 var db = mongoose.connection;
 
