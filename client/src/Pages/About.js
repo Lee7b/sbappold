@@ -8,7 +8,7 @@ class About extends React.Component {
             <Layout>
               <div className="container">      
                 <br /> <br />
-                <MDBIframe src="https://www.docdroid.net/Locr3Zm/resume.pdf" />
+                <MDBIframe src="https://docdro.id/JrwWxfG" />
                 <MDBCol className="d-flex justify-content-center" style ={{ paddingTop: "20px" }}>
                 <MDBCard style={{ width: "30rem" }}>
                     <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" waves />
