@@ -41,9 +41,9 @@ class Header extends React.Component {
                     </MDBDropdownToggle>
                     <MDBDropdownMenu className="dropdown-default">
                       <MDBDropdownItem href="/rpsgame">Rock Paper Scissors</MDBDropdownItem>
-                      <MDBDropdownItem href="/">Project 2</MDBDropdownItem>
-                      <MDBDropdownItem href="/">Project 3</MDBDropdownItem>
-                      <MDBDropdownItem href="/">Project 4</MDBDropdownItem>
+                      <MDBDropdownItem href="/">Mario Clone</MDBDropdownItem>
+                      <MDBDropdownItem href="/">Chat</MDBDropdownItem>
+                      <MDBDropdownItem href="/">Poker</MDBDropdownItem>
                     </MDBDropdownMenu>
                  </MDBDropdown>
                 </MDBNavItem>

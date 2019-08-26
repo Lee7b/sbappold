@@ -2,7 +2,6 @@ const express = require('express');
 const path = require('path');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const nodemailer = require('nodemailer');
 const mongoose = require('mongoose');
 const contactRoute = require('./routes/contact');
 
@@ -32,6 +31,7 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+//Contact me route
 app.use('/api/contact', contactRoute);
 
 // The "catchall" handler: for any request that doesn't
