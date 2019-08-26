@@ -6,6 +6,15 @@ class Home extends React.Component {
     render () {
     return (
         <Layout>
+            {/* <MDBJumbotron fluid>
+                <MDBContainer>
+                    <h2 className="display-4">Welcome</h2>
+                    <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Pellentesque mollis suscipit aliquam. Suspendisse posuere 
+                             turpis justo, vel ultrices nulla mollis eu.</p>
+                </MDBContainer>
+            </MDBJumbotron> */}
+
             <MDBContainer>
             <MDBRow>
                 <MDBCol>
