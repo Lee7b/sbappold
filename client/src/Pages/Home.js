@@ -16,10 +16,8 @@ class Home extends React.Component {
                         <p className="mx-5 mb-5">
                             This website is a personal project of mine that I've been working on when time permits. It's a single page application that it is currently hosted on Heroku. It uses a React front-end 
                             with a node/express back-end. For the design I am using Material Design
-                            bootstrap for React. I cannot say enough good things about it!
-                            I will add more components and features as time goes on. Including a weather page, 
-                            an online poker game with chat, secure register and log in capability,
-                            and more. 
+                            bootstrap for React. I cannot say enough good things about these frameworks!
+                            I plan on implementing a lot more components and features in the future so stay tuned! Thanks for checking me out.
                         </p>
                         <MDBBtn outline color="white" className="mb-5"><MDBIcon icon="clone" className="mr-2"></MDBIcon> View project</MDBBtn>
                     </MDBCol>
