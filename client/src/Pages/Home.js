@@ -28,7 +28,7 @@ class Home extends React.Component {
                             bootstrap for React. I cannot say enough good things about these frameworks!
                             I plan on implementing a lot more components and features in the future so stay tuned! Thanks for checking me out.
                         </p>
-                        <MDBBtn outline color="white" className="mb-5"><MDBIcon icon="clone" className="mr-2"></MDBIcon> View project</MDBBtn>
+                        <MDBBtn outline color="white" className="mb-5" href="https://github.com/Lee7b/sbapp"><MDBIcon icon="clone" className="mr-2"></MDBIcon>View project</MDBBtn>
                     </MDBCol>
                     </MDBCol>
                 </MDBJumbotron>
