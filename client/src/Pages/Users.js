@@ -21,6 +21,7 @@ class Users extends React.Component {
             <Layout>
             <br /><br /><br />
             <div className = "container">
+                <img src='./img/code2.png' style={{height: '500px', width: '600px'}} />
                 {this.state.loading || !this.state.person ? <div>Loading random user. . .
                 <div className="spinner-border text-primary" role="status">
                     <span className="sr-only">Loading...</span>

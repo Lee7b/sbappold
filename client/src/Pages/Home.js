@@ -16,7 +16,18 @@ class Home extends React.Component {
             </MDBJumbotron> */}
 
             <MDBContainer>
-            <MDBRow>
+
+            <MDBCardTitle className="h1-responsive pt-3 m-5 font-bold">Hello world!</MDBCardTitle>
+                <p className="mx-5 mb-5">
+                    This website is a personal project of mine that I've been working on when time permits. It's a single page application that it is currently hosted on Heroku. It uses a React front-end 
+                    with a node/express back-end. For the design I am using Material Design
+                    bootstrap for React. I cannot say enough good things about these frameworks!
+                    I plan on implementing a lot more components and features in the future so stay tuned! Thanks for checking me out.
+                </p>  <img src="./img/dev1.png" style={{height: "350px", width: "500px"}}/>
+                <MDBBtn outline color="black" className="mb-5" href="https://github.com/Lee7b/sbapp"><MDBIcon icon="clone" className="mr-2"></MDBIcon>View project</MDBBtn>
+            
+        
+            {/* <MDBRow>
                 <MDBCol>
                 <MDBJumbotron style={{ padding: 0 }}>
                     <MDBCol className="text-white text-center py-5 px-4 my-5" style={{ backgroundImage: "url(./img/bg1.jpg)" }}>
@@ -33,10 +44,8 @@ class Home extends React.Component {
                     </MDBCol>
                 </MDBJumbotron>
                 </MDBCol>
-            </MDBRow>
-            </MDBContainer>
+            </MDBRow> */}
 
-            <MDBContainer>
             <MDBRow>
                 <MDBCol>
                 <MDBJumbotron style={{ padding: 0 }}>
