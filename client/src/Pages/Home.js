@@ -46,7 +46,7 @@ class Home extends React.Component {
                 </MDBCol>
             </MDBRow> */}
 
-            <MDBRow>
+            {/* <MDBRow>
                 <MDBCol>
                 <MDBJumbotron style={{ padding: 0 }}>
                     <MDBCol className="text-white text-center py-5 px-4 my-5" style={{ backgroundImage: "url(./img/bg2.jpg)" }}>
@@ -66,7 +66,8 @@ class Home extends React.Component {
                     </MDBCol>
                 </MDBJumbotron>
                 </MDBCol>
-            </MDBRow>
+            </MDBRow> */}
+            
             </MDBContainer>
         </Layout>
     )
