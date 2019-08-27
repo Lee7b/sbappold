@@ -23,7 +23,7 @@ class Home extends React.Component {
                     with a node/express back-end. For the design I am using Material Design
                     bootstrap for React. I cannot say enough good things about these frameworks!
                     I plan on implementing a lot more components and features in the future so stay tuned! Thanks for checking me out.
-                </p>  <img className="img-fluid" src="./img/dev1.png" style={{height: "350px", width: "500px"}}/>
+                </p>  <img className="img-fluid" src="./img/dev1.png" style={{height: "auto"}}/>
                 <MDBBtn outline color="black" className="mb-5" href="https://github.com/Lee7b/sbapp"><MDBIcon icon="clone" className="mr-2"></MDBIcon>View project</MDBBtn>
             
         

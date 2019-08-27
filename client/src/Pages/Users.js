@@ -21,7 +21,6 @@ class Users extends React.Component {
             <Layout>
             <br />
             <div className = "container">
-                <img className="img-fluid" src='./img/code2.png' style={{height: '500px', width: '600px'}} />
                 {this.state.loading || !this.state.person ? <div>Loading random user. . .
                 <div className="spinner-border text-primary" role="status">
                     <span className="sr-only">Loading...</span>
@@ -34,6 +33,7 @@ class Users extends React.Component {
                     <div>Gender: {this.state.person.gender}</div>
                     <div>State: {this.state.person.location.state}</div>
                     <div>Email: {this.state.person.email}</div>
+                    <img className="img-fluid" src="./img/code2.png" style={{height: "auto"}} />
                   </div>}
             </div>
             <br /><br /><br />
