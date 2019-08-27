@@ -40,8 +40,8 @@ class Header extends React.Component {
                       <div className="d-none d-md-inline">Projects</div>
                     </MDBDropdownToggle>
                     <MDBDropdownMenu className="dropdown-default">
+                      <MDBDropdownItem href="https://sbxphotoapp.herokuapp.com/">SBX Photography</MDBDropdownItem>
                       <MDBDropdownItem href="/rpsgame">Rock Paper Scissors</MDBDropdownItem>
-                      <MDBDropdownItem href="/">Project 2</MDBDropdownItem>
                       <MDBDropdownItem href="/">Project 3</MDBDropdownItem>
                       <MDBDropdownItem href="/">Project 4</MDBDropdownItem>
                     </MDBDropdownMenu>
